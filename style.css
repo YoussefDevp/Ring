@@ -62,13 +62,15 @@ header div input[type="text"] {
   border: solid 1.5px #c2d3ff;
   padding: .5rem 2rem;
   border-radius: 45px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 header div input[value="Enter Your email"] {
   color: #c2d3ff;
   font-size: 80%;
+}
+
+header div input:focus {
+  outline: none;
 }
 
 header div a {

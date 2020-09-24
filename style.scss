@@ -49,12 +49,16 @@ header {
         border: solid 1.5px hsl(223, 100%, 88%);
         padding: .5rem 2rem;
         border-radius: 45px;
-        box-sizing: border-box;
     }
 
+    
     input[value="Enter Your email"] {
         color: hsl(223, 100%, 88%);
         font-size: 80%;
+    }
+
+    input:focus {
+        outline: none;
     }
 
     a {
