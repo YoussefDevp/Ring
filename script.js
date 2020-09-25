@@ -1,15 +1,25 @@
-const email = document.getElementById('email')
-const form = document.getElementById('form')
-const errorElement = document.getElementById('error')
+function Validation(){
 
-form.addEventListener('submit', (e) => {
-    let messages = []
-    if (email.value === '' || email.value == null) {
-        messages.push("Please provide a valid email address")
-    }
 
-    if (messages.length > 0) {
-        e.preventDefault()
-        errorElement.innerText = messages.join(',')
-    }
-})
+var email = document.getElementById('email').value;
+var form = document.getElementById('form');
+var text = document.getElementById("text");
+
+var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+if(email.match(pattern))
+{
+    form.classList.add("valid")
+    form.classList.remove("invalid")
+    text.innerHTML  = "Your Email Address is Valid"
+    text.style.color = "#00ff00"
+}
+else
+{
+    form.classList.remove("valid")
+    form.classList.add("invalid")
+    text.innerHTML  = "Your Email Address is inValid"
+    
+}
+
+}
