@@ -12,7 +12,7 @@ if(email.match(pattern))
     form.classList.add("valid")
     form.classList.remove("invalid")
     text.innerHTML  = "Your Email Address is Valid"
-    text.style.color = "#00ff00"
+    text.style.color = "#1f6650"
 }
 else
 {
