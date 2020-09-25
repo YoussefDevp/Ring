@@ -52,6 +52,10 @@ header {
         box-sizing: border-box;
     }
 
+    input[type="text"]:focus {
+        outline: none;
+    }
+
     input[value="Enter Your email"] {
         color: hsl(223, 100%, 88%);
         font-size: 80%;
@@ -81,9 +85,20 @@ header {
     width: 100%;
     text-align: center;
     img {
+        transform: scale(1.2);
         width: 40%;
         margin: 4rem auto;
+        animation-name: example;
+        animation-duration: 4s ;
+      
+      
+      @keyframes example {
+        from {transform: scale(1);}
+        to {transform: scale(1.2);}
+      }
+        
     }
+
 }
 
 footer {
