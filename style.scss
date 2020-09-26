@@ -97,12 +97,12 @@ header {
 
     span
      {
+      font-weight: 500;
       top: 48px;
       position: absolute;
-      font-size: 60%;
+      font-size: 50%;
       text-align: center;
       font-style: italic;
-      color: hsl(354, 100%, 66%);
 
     }
 
@@ -146,11 +146,23 @@ footer {
         p {
             color: hsl(0, 0%, 59%);
             font-size: 80%;
-            margin: 2.5rem auto;
+        }
+
+        p:nth-of-type(2) {
+           line-height: 2;
+           margin-bottom: 1rem;
+            a {
+                text-decoration: none;
+                font-size: 100%;
+                color: rgba(2, 202, 2, 0.753);
+            }
+            a:hover {
+                filter: brightness(200%);
+                animation:text-shadow-drop-right .6s both;
+                @keyframes text-shadow-drop-right{0%{text-shadow:0 0 0 transparent}100%{text-shadow:5px 0 18px rgba(0, 204, 0, 0.733)}}
+            }
         }
     }
-
-
     
 
 

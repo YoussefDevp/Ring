@@ -1,3 +1,38 @@
+/** Big Tablet to small */
+@media only screen and (max-width: 583px) {
+  body {
+    margin: 0 1rem;
+  }
+  body header h1 {
+    font-size: 180%;
+  }
+  body header button {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  header form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header form input {
+    margin-bottom: 1.5rem;
+  }
+  header form button {
+    width: 100%;
+  }
+}
+
+/** big phone to Small Phone */
+@media only screen and (max-width: 425px) {
+  body header h1 {
+    font-size: 150%;
+  }
+}
+
 @media only screen and (max-width: 533px) {
   header img {
     width: 75px;

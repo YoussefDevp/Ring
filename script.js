@@ -18,7 +18,8 @@ else
 {
     form.classList.remove("valid")
     form.classList.add("invalid")
-    text.innerHTML  = "Your Email Address is inValid"
+    text.innerHTML  = "Please provide a valid email Address"
+    text.style.color = "hsl(354, 100%, 66%)"
     
 }
 

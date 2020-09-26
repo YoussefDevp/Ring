@@ -220,12 +220,12 @@ header form .email-input {
 }
 
 header form span {
+  font-weight: 500;
   top: 48px;
   position: absolute;
-  font-size: 60%;
+  font-size: 50%;
   text-align: center;
   font-style: italic;
-  color: #ff5263;
 }
 
 .hero {
@@ -287,6 +287,41 @@ footer i:hover {
 footer p {
   color: #969696;
   font-size: 80%;
-  margin: 2.5rem auto;
+}
+
+footer p:nth-of-type(2) {
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+footer p:nth-of-type(2) a {
+  text-decoration: none;
+  font-size: 100%;
+  color: rgba(2, 202, 2, 0.753);
+}
+
+footer p:nth-of-type(2) a:hover {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+  -webkit-animation: text-shadow-drop-right .6s both;
+          animation: text-shadow-drop-right .6s both;
+}
+
+@-webkit-keyframes text-shadow-drop-right {
+  0% {
+    text-shadow: 0 0 0 transparent;
+  }
+  100% {
+    text-shadow: 5px 0 18px rgba(0, 204, 0, 0.733);
+  }
+}
+
+@keyframes text-shadow-drop-right {
+  0% {
+    text-shadow: 0 0 0 transparent;
+  }
+  100% {
+    text-shadow: 5px 0 18px rgba(0, 204, 0, 0.733);
+  }
 }
 /*# sourceMappingURL=style.css.map */
